@@ -1,11 +1,4 @@
 # Sepsal: Early Sepsis Prediction in Critical Care 🩺
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python Badge"/>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Pandas-150458%3Fstyle%3Dfor-the-badge%26logo%3Dpandas%26logoColor%3Dwhite" alt="Pandas Badge"/>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/scikit--learn-F7931E%3Fstyle%3Dfor-the-badge%26logo%3Dscikit-learn%26logoColor%3Dwhite" alt="Scikit-learn Badge"/>
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/XGBoost-006391%3Fstyle%3Dfor-the-badge%26logo%3Dxgboost%26logoColor%3Dwhite" alt="XGBoost Badge"/>
-<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow Badge"/>
-</p>
 
 <p align="center">
 <em>A machine learning pipeline to predict the onset of sepsis in ICU patients using time-series vital sign data. This project implements and compares two powerful modeling approaches: XGBoost and a Deep Learning (LSTM) model, based on the methodology from my 5th-semester research paper.</em>
@@ -29,9 +22,11 @@ This project implements a complete end-to-end machine learning pipeline:
 
 🧠 Dual-Model Approach: Two distinct modeling strategies were implemented to compare their effectiveness:
 
-# XGBoost (Gradient Boosting): A powerful tree-based model trained on "summary" features (e.g., mean, max, std) aggregated from each patient's time-series data.
+# XGBoost (Gradient Boosting):
+A powerful tree-based model trained on "summary" features (e.g., mean, max, std) aggregated from each patient's time-series data.
 
-# LSTM (Long Short-Term Memory): A deep learning Recurrent Neural Network (RNN) that directly processes the sequence of vital signs over time, allowing it to learn from temporal patterns and trends.
+# LSTM (Long Short-Term Memory):
+A deep learning Recurrent Neural Network (RNN) that directly processes the sequence of vital signs over time, allowing it to learn from temporal patterns and trends.
 
 # 📊 Model Evaluation: Both models are trained on a portion of the data and then evaluated on an unseen test set to measure their predictive accuracy and performance, with a full classification report.
 
@@ -39,6 +34,10 @@ This project implements a complete end-to-end machine learning pipeline:
 Language: Python
 
 Data Manipulation: Pandas, NumPy
+
+Machine Learning: Scikit-learn (for data splitting and scaling), XGBoost
+
+Deep Learning: TensorFlow (Keras)
 
 # 📈 Results and Discussion
 Running the script on the generated dataset demonstrates key machine learning concepts:
@@ -53,6 +52,4 @@ The Importance of Data: The accuracy of both models is highly dependent on the s
 <img width="1411" height="294" alt="image" src="https://github.com/user-attachments/assets/86590e21-fc12-4faa-a196-8a01ecb38921" />
 
 
-Machine Learning: Scikit-learn (for data splitting and scaling), XGBoost
 
-Deep Learning: TensorFlow (Keras)
