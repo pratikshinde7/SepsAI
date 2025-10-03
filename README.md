@@ -28,7 +28,8 @@ A powerful tree-based model trained on "summary" features (e.g., mean, max, std)
 # LSTM (Long Short-Term Memory):
 A deep learning Recurrent Neural Network (RNN) that directly processes the sequence of vital signs over time, allowing it to learn from temporal patterns and trends.
 
-# 📊 Model Evaluation: Both models are trained on a portion of the data and then evaluated on an unseen test set to measure their predictive accuracy and performance, with a full classification report.
+# 📊 Model Evaluation:
+Both models are trained on a portion of the data and then evaluated on an unseen test set to measure their predictive accuracy and performance, with a full classification report.
 
 # 🛠️ Technology Stack
 Language: Python
